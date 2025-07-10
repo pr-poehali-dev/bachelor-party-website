@@ -216,6 +216,17 @@ const Index = () => {
             />
           </div>
 
+          {/* Default gallery photos */}
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-8">
+            <div className="aspect-square bg-slate-200 rounded-lg overflow-hidden">
+              <img
+                src="https://cdn.poehali.dev/files/94623ad5-42d2-4c84-b46c-4200b9d7c5d8.jpeg"
+                alt="Участник мальчишника"
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+
           {uploadedPhotos.length > 0 && (
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-8">
               {uploadedPhotos.map((photo, index) => (
